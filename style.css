@@ -1,0 +1,17 @@
+body { 
+    background-color: darkcyan;
+    color: white;
+    font-size: 10px;
+}
+h1 {
+    font-size: 4em;
+    color:white;
+}
+
+li {
+    color: white;
+    font-size: 2em;
+    list-style: none;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+}
