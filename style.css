@@ -1,17 +1,39 @@
-body { 
-    background-color: darkcyan;
-    color: white;
+* {
+    box-sizing: border-box;
+}
+html, body {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    color: #6b6b6b;
     font-size: 10px;
+    word-spacing: 1px;
+    text-transform: none;
 }
-h1 {
-    font-size: 4em;
-    color:white;
+#page-border {
+    margin: 20px;
+    background: #f5f5f5;
 }
-
-li {
-    color: white;
+#head-container {
+    padding: 10px 10px;
+    margin: auto;
+}
+.menu li {
+    margin-bottom: 10px;
+    width: 200px;
+    }
+a {
+    color: #181818;
     font-size: 2em;
-    list-style: none;
+    text-decoration: none;
     text-transform: uppercase;
-    letter-spacing: .5em;
-}
+    letter-spacing: .2em;
+    }
+.menu {
+    justify-content: center;
+    list-style: none;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    padding-inline-start: 0px;
+    }
