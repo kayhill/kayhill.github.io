@@ -1,39 +1,257 @@
+body {
+    font-family: 'Raleway', arial, sans-serif;
+    font-size: 16px;
+    color: #001d3a;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
 * {
     box-sizing: border-box;
 }
-html, body {
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Quicksand', sans-serif;
-    text-align: center;
-    color: #6b6b6b;
-    font-size: 10px;
-    word-spacing: 1px;
-    text-transform: none;
+
+/* Global */
+.container {
+    width: 98%;
+    margin: 1%;
 }
-#page-border {
-    margin: 20px;
-    background: #f5f5f5;
-}
-#head-container {
-    padding: 10px 10px;
-    margin: auto;
-}
-.menu li {
-    margin-bottom: 10px;
-    width: 200px;
-    }
-a {
-    color: #181818;
-    font-size: 2em;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: .2em;
-    }
-.menu {
-    justify-content: center;
-    list-style: none;
+
+.button {
     display: flex;
-    position: relative;
-    flex-wrap: wrap;
-    padding-inline-start: 0px;
+    justify-content: center;
+    margin-bottom: 50px;
     }
+
+button {
+  background-color: #331a4d;
+  border: none;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 1em;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #4caaa7;
+}
+
+h2 {
+    font-size: 2em;
+    color: #001d3a;
+    text-align: center;
+}
+
+/* Header */
+#header { 
+    background-color: #003366;
+}
+
+.header-text {
+    text-align: center;
+    color: white;
+    margin-top: -100px;
+    margin-bottom: -100px;
+    }
+
+.header-text h1{
+    font-size: 3em;
+    padding-top: 80px;
+}
+
+.header-text h2 {
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+    text-transform: capitalize;
+    opacity: 90%;
+    margin-top: -20px;
+}
+
+.navbar {
+    background-image: url('./media/sa_header.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 380px;
+    text-align: center;
+    border-bottom: solid;
+    border-color: #331a4d;
+    border-width: 40px;
+       
+    }
+
+.navbar ul {
+    display: inline;
+    list-style: none;
+    }
+
+.navbar a {
+    float: right;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    margin: 330px 40px 5px 0px;
+    
+}
+
+.navbar a:hover{
+    
+    font-weight: bold;
+  
+}
+
+
+/*main-hero*/
+
+.hero {
+   overflow: hidden;
+   height: 400px;
+   background-image: url(./media/cloud_background.png);
+   background-repeat: no-repeat;
+   background-position: right;
+   background-position-y: -40px;
+   background-size: cover;
+   margin-top: -10px;
+}
+
+.hero h2 {  
+    font-size: 2.5em;
+    color: #001d3a;
+    text-align: left;   
+    }
+
+.hero p {
+    font-size: 1em;
+    opacity: 80%;
+    color: #001d3a; 
+}
+
+.hero-text {
+    padding-top: 10px;
+    float: left;
+    width: 50%;
+    padding-left: 20px;
+   
+    }
+
+/*section-services*/
+.services {
+    display: flex;
+    justify-content: space-evenly;
+       }
+
+.service {
+    margin: 10px;
+    padding: 10px;
+}
+.service img {
+    height: 160px;
+    display: block;
+    margin: auto;
+    
+}
+
+/*section-contact*/
+.contact {
+    height: 200px;
+    
+}
+
+.contact h2 {
+    float: left;
+    
+}
+/*footer*/
+
+footer{
+    padding: 20px;
+    margin-top:200px;
+    color: white;
+    background-color: #66000A;
+    text-align: center;
+}
+
+/*Media Queries */
+
+@media screen and (max-width: 700px) {
+    .navbar {
+        background-image: url('./media/SA_Header_600.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 380px;
+        }
+    .services {
+            display: block;
+            margin: auto;
+        }
+     
+}
+
+@media screen and (max-width: 520px) {
+
+    .navbar {
+        height: 390px;
+        border-bottom-width: 10px;
+        }
+
+    .navbar-menu {        
+        padding-top: 255px; 
+        
+        }
+
+    .navbar-menu ul, .navbar-menu a {
+        display: block;
+        float: left;
+        margin-top: -20px;
+        padding: 10px;
+        }
+
+    .hero {
+        display: block;
+        
+    }
+    .hero-text {
+        float: none;
+        margin: 10px;
+        padding: 10px;
+        width: 98%;
+        text-align: center;
+        }
+
+    .hero-text h2 {
+        text-align: center;
+    }
+ 
+    
+   
+  }
+
+  @media screen and (min-width: 700px) {
+    .hero-text {
+        width: 55%;
+    }
+   #startbutton {
+        display: flex;
+        justify-content: left;
+    }
+    
+        
+}
+    
+@media screen and (min-width: 1000px) {
+    .hero-text p {
+        font-size: 2em;
+        margin-top: -20px;
+    }
+    .hero {
+        background-size: contain;
+        background-position-x: 50px;
+        background-position-y: 0px;
+    }
+
+}
