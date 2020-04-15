@@ -71,7 +71,7 @@ h2 {
 }
 
 .navbar {
-    background-image: url('/media/SA_Header.png');
+    background-image: url('./media/SA_Header.png');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
