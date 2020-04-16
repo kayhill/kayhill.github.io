@@ -27,6 +27,7 @@ button {
   border: none;
   color: white;
   padding: 15px 20px;
+  margin-top: 30px;
   text-align: center;
   text-decoration: none;
   text-transform: capitalize;
@@ -111,11 +112,12 @@ h2 {
    overflow: hidden;
    height: 400px;
    background-image: url(./media/cloud_background.png);
-   background-repeat: no-repeat;
+   background-repeat: repeat;
    background-position: right;
    background-position-y: -40px;
    background-size: cover;
    margin-top: -10px;
+   animation: clouds 45s linear infinite;
 }
 
 .hero h2 {  
@@ -182,9 +184,11 @@ footer{
         background-image: url('./media/SA_Header_600.png');
         background-repeat: no-repeat;
         background-size: contain;
+        background-position: top;
         width: 100%;
         height: 380px;
         }
+
     .services {
             display: block;
             margin: auto;
@@ -192,7 +196,7 @@ footer{
      
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 410px) {
 
     .navbar {
         height: 390px;
@@ -201,7 +205,6 @@ footer{
 
     .navbar-menu {        
         padding-top: 255px; 
-        
         }
 
     .navbar-menu ul, .navbar-menu a {
@@ -210,6 +213,15 @@ footer{
         margin-top: -20px;
         padding: 10px;
         }
+    }
+
+@media screen and (min-width: 411px) and (max-width: 550px) {
+    .navbar-menu a {
+        margin-right: 15px;
+        }
+    }
+
+@media screen and (max-width: 520px) {
 
     .hero {
         display: block;
@@ -248,10 +260,14 @@ footer{
         font-size: 2em;
         margin-top: -20px;
     }
-    .hero {
-        background-size: contain;
-        background-position-x: 50px;
-        background-position-y: 0px;
-    }
+}
+@media screen and (min-width: 1200px) {
+   .hero {
+        animation: clouds 10s linear infinite;
+    
+}}
 
+@keyframes clouds {
+    0%{background-position: right;}
+    100%{background-position: left}
 }
