@@ -264,10 +264,10 @@ footer{
 @media screen and (min-width: 1200px) {
    .hero {
         animation: clouds 10s linear infinite;
-    
-}}
+   }
+}
 
 @keyframes clouds {
     0%{background-position: right;}
-    100%{background-position: left}
+    100%{background-position: left;}
 }
