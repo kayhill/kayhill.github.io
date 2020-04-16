@@ -19,7 +19,7 @@ body {
 .button {
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
+    
     }
 
 button {
@@ -27,7 +27,7 @@ button {
   border: none;
   color: white;
   padding: 15px 20px;
-  margin-top: 30px;
+  margin-top: 10px;
   text-align: center;
   text-decoration: none;
   text-transform: capitalize;
@@ -85,7 +85,7 @@ a.current {
     border-bottom: solid;
     border-color: #331a4d;
     border-width: 40px;
-       
+      
     }
 
 .navbar ul {
@@ -99,12 +99,12 @@ a.current {
     text-align: center;
     text-decoration: none;
     font-size: 25px;
+    font-weight: 500;
     margin: 330px 40px 5px 0px;
     
 }
 
 .navbar a:hover{
-    
     font-weight: bold;
   
 }
@@ -163,6 +163,7 @@ a.current {
 /*section-contact*/
 .contact {
     height: 200px;
+    margin: 10px 0px 0px 20px;
     
 }
 
@@ -199,7 +200,7 @@ footer{
      
 }
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 412px) {
 
     .navbar {
         height: 390px;
@@ -218,7 +219,7 @@ footer{
         }
     }
 
-@media screen and (min-width: 411px) and (max-width: 550px) {
+@media screen and (min-width: 413px) and (max-width: 550px) {
     .navbar-menu a {
         margin-right: 15px;
         }
@@ -241,9 +242,6 @@ footer{
     .hero-text h2 {
         text-align: center;
     }
- 
-    
-   
   }
 
   @media screen and (min-width: 700px) {
@@ -253,9 +251,7 @@ footer{
    #startbutton {
         display: flex;
         justify-content: left;
-    }
-    
-        
+    }     
 }
     
 @media screen and (min-width: 1000px) {
@@ -264,6 +260,7 @@ footer{
         margin-top: -20px;
     }
 }
+
 @media screen and (min-width: 1200px) {
    .hero {
         animation: clouds 10s linear infinite;
