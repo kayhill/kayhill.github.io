@@ -94,18 +94,19 @@ a.current {
     }
 
 .navbar a {
-    float: right;
+    float: left;
     color: white;
     text-align: center;
     text-decoration: none;
     font-size: 25px;
     font-weight: 500;
-    margin: 330px 40px 5px 0px;
+    margin: 330px 0px 5px 30px;
     
 }
 
 .navbar a:hover{
     font-weight: bold;
+    color: #4caaa7;
   
 }
 
@@ -147,11 +148,14 @@ a.current {
 .services {
     display: flex;
     justify-content: space-evenly;
+    
        }
 
 .service {
+    text-align: center;
     margin: 10px;
     padding: 10px;
+    width: 30%;
 }
 .service img {
     height: 160px;
@@ -162,20 +166,20 @@ a.current {
 
 /*section-contact*/
 .contact {
-    height: 200px;
-    margin: 10px 0px 0px 20px;
-    
+    margin: auto;
+    text-align: center;
 }
+span {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+ 
 
-.contact h2 {
-    float: left;
-    
-}
 /*footer*/
 
-footer{
+footer { 
     padding: 20px;
-    margin-top:200px;
+    margin: auto;
     color: white;
     background-color: #66000A;
     text-align: center;
@@ -192,15 +196,16 @@ footer{
         width: 100%;
         height: 380px;
         }
-
-    .services {
+        .services {
             display: block;
-            margin: auto;
+            margin: auto;            
         }
-     
-}
-
-@media screen and (max-width: 412px) {
+        .service {
+            width: 90%
+        }
+    }
+    
+@media screen and (max-width: 455px) {
 
     .navbar {
         height: 390px;
@@ -211,17 +216,11 @@ footer{
         padding-top: 255px; 
         }
 
-    .navbar-menu ul, .navbar-menu a {
+    .navbar-menu a,  .navbar-menu ul {
         display: block;
         float: left;
-        margin-top: -20px;
-        padding: 10px;
-        }
-    }
-
-@media screen and (min-width: 413px) and (max-width: 550px) {
-    .navbar-menu a {
-        margin-right: 15px;
+        margin-top: -25px;
+        padding: 15px;
         }
     }
 
@@ -272,11 +271,11 @@ footer{
     100%{background-position: left;}
 }
 
-/*End Home Page -- Begin FAQ*/
+/*End Home Page -- Begin Order*/
 /*Header*/
 
 
-.faq .header {
+.order .header {
     background-image: none;
     background-color: #003366;
     width: 100%;
@@ -286,23 +285,22 @@ footer{
     border-width: 10px;
 }
 
-.faq .navbar {
+.order .navbar {
     background-image: none;
     margin: 0;
     border: none;
     height: auto;
 }
 
-.faq .navbar a {
+.order.navbar a {
     margin: 10px 0px;
     padding: 0px 20px;
     
 }
-.faq .header h1 {
+.order .header h1 {
     float: left;
     padding-left: 10px;
     font-weight: normal;
     color: white;
 }
-
 
