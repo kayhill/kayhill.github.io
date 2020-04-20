@@ -85,6 +85,7 @@ a.current {
     border-bottom: solid;
     border-color: #331a4d;
     border-width: 40px;
+   
       
     }
 
@@ -99,7 +100,6 @@ a.current {
     text-align: center;
     text-decoration: none;
     font-size: 25px;
-    font-weight: 500;
     margin: 330px 0px 5px 30px;
     
 }
@@ -271,11 +271,12 @@ footer {
     100%{background-position: left;}
 }
 
-/*End Home Page -- Begin Order*/
+/*End Home Page -- Begin Secondary*/
 /*Header*/
 
 
-.order .header {
+
+.secondary .header {
     background-image: none;
     background-color: #003366;
     width: 100%;
@@ -283,24 +284,33 @@ footer {
     border-bottom: solid;
     border-color: #331a4d;
     border-width: 10px;
+    display: flex;
+    
 }
 
-.order .navbar {
+.secondary .navbar {
     background-image: none;
     margin: 0;
     border: none;
     height: auto;
+    float: right;
+    
 }
 
-.order.navbar a {
+.secondary .navbar a {
     margin: 10px 0px;
     padding: 0px 20px;
     
+    }
+
+.secondary .navbar ul {
+    padding: 0;
+    margin: 0;
 }
-.order .header h1 {
-    float: left;
+
+.secondary .header h1 {
+    float: right;
     padding-left: 10px;
-    font-weight: normal;
     color: white;
 }
 
