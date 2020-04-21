@@ -39,15 +39,21 @@ button:hover {
     background-color: #4caaa7;
 }
 
+h1 {
+    margin: 0;
+    
+}
+
 h2 {
     font-size: 2em;
     color: #001d3a;
     text-align: center;
 }
+h3 { 
+    font-size: 1.25em;
+}
 
-a.current {
-    font-weight: bolder;
-    }
+
 
 /* Header Home */
 .header { 
@@ -57,13 +63,14 @@ a.current {
 .header-text {
     text-align: center;
     color: white;
-    margin-top: -100px;
+    margin: -50px;
     margin-bottom: -100px;
     }
 
 .header-text h1{
     font-size: 3em;
     padding-top: 80px;
+    margin: 10px;
 }
 
 .header-text h2 {
@@ -72,7 +79,7 @@ a.current {
     font-style: italic;
     text-transform: capitalize;
     opacity: 90%;
-    margin-top: -20px;
+
 }
 
 .navbar {
@@ -85,8 +92,7 @@ a.current {
     border-bottom: solid;
     border-color: #331a4d;
     border-width: 40px;
-   
-      
+     
     }
 
 .navbar ul {
@@ -109,6 +115,10 @@ a.current {
     color: #4caaa7;
   
 }
+a.current {
+    font-weight: bolder;
+    color: #4caaa7;
+    }
 
 /*main-hero*/
 
@@ -168,6 +178,7 @@ a.current {
 .contact {
     margin: auto;
     text-align: center;
+    width: 50%;
 }
 span {
     font-size: 1.2em;
@@ -183,7 +194,101 @@ footer {
     color: white;
     background-color: #66000A;
     text-align: center;
+    
 }
+
+
+/*End Home Page -- Begin Secondary*/
+/*Header*/
+
+
+
+.secondary .header {
+    background-image: none;
+    background-color: #003366;
+    width: 100%;
+    height: 100px;
+    border-bottom: solid;
+    border-color: #331a4d;
+    border-width: 10px;
+    margin: 0;
+    padding: 0;
+    }
+
+.secondary .navbar {
+    background-image: none;
+    margin: 0;
+    border: none;
+    height: auto;
+}
+
+.secondary .navbar a {
+    margin: 0px 0px;
+    padding: 0px 15px;
+    
+    }
+
+.secondary .navbar ul {
+    padding: 0;
+    margin: 0;
+    float: right;
+    
+}
+.secondary .navbar li {
+    display: inline;
+    
+}
+
+.secondary .header h1 {
+    padding: 10px;
+    color: white;
+}
+
+/*Services*/
+
+
+.secondary-background {
+    background-image: url('./media/secondary_background.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: auto;
+    z-index: 999;
+    display: flex;
+    
+}
+
+.service-list b {
+    font-size: 1.25em;
+    }
+
+.service-list {
+   float: left;
+   width: 65%;
+   padding: 10px;
+   background-color: #4caaa734;
+}
+
+.order-now {
+    width: 30%;
+    float: right;
+    padding: 10px;
+    text-align: center;
+    padding-bottom: 30px;
+    margin: 1em;
+    height: 400px;
+   }
+
+   .secondary button {
+       background-color: #326600;
+   }
+
+   .secondary button:hover {
+    cursor: pointer;
+    background-color: #4caaa7;
+}
+
+
 
 /*Media Queries */
 
@@ -226,11 +331,11 @@ footer {
 
 @media screen and (max-width: 520px) {
 
-    .hero {
+    .hero, .secondary-background, .service-list, .order-now {
         display: block;
         
     }
-    .hero-text {
+    .hero-text .secondary-background, .service-list, .order-now {
         float: none;
         margin: 10px;
         padding: 10px;
@@ -240,6 +345,9 @@ footer {
 
     .hero-text h2 {
         text-align: center;
+    }
+    .service-list ul {
+        list-style: none;
     }
   }
 
@@ -269,48 +377,5 @@ footer {
 @keyframes clouds {
     0%{background-position: right;}
     100%{background-position: left;}
-}
-
-/*End Home Page -- Begin Secondary*/
-/*Header*/
-
-
-
-.secondary .header {
-    background-image: none;
-    background-color: #003366;
-    width: 100%;
-    height: 100px;
-    border-bottom: solid;
-    border-color: #331a4d;
-    border-width: 10px;
-    display: flex;
-    
-}
-
-.secondary .navbar {
-    background-image: none;
-    margin: 0;
-    border: none;
-    height: auto;
-    float: right;
-    
-}
-
-.secondary .navbar a {
-    margin: 10px 0px;
-    padding: 0px 20px;
-    
-    }
-
-.secondary .navbar ul {
-    padding: 0;
-    margin: 0;
-}
-
-.secondary .header h1 {
-    float: right;
-    padding-left: 10px;
-    color: white;
 }
 
