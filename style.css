@@ -1,3 +1,5 @@
+/* Global */
+
 body {
     font-family: 'Raleway', arial, sans-serif;
     font-size: 16px;
@@ -9,19 +11,20 @@ body {
 }
 * {
     box-sizing: border-box;
+
 }
 
-
-body {
+.spacer {
+    height: 5em;
     width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
-    overflow-y: auto;
+    margin: 0 auto;
+    padding: 0 auto;
 }
 
-/* Global */
+
+
+
+
 .container {
     width: 98%;
     margin: 1%;
@@ -67,12 +70,13 @@ h3 {
 /* Header Home */
 .header { 
     background-color: #003366;
+    margin: 0 0;
 }
 
 .header-text {
     text-align: center;
     color: white;
-    margin: -50px;
+    margin-top: -50px;
     margin-bottom: -100px;
     }
 
@@ -90,11 +94,16 @@ h3 {
     opacity: 90%;
 
 }
+ a {
+     text-decoration: none;
+     color: #001d3a;
+ }
 
 .navbar {
     background-image: url('media/SA_Header.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: 100%;
     height: 380px;
     text-align: center;
@@ -146,7 +155,8 @@ a.current {
 .hero h2 {  
     font-size: 2.5em;
     color: #001d3a;
-    text-align: left;   
+    text-align: left;  
+    
     }
 
 .hero p {
@@ -165,60 +175,67 @@ a.current {
 
 /*section-services*/
 
-.services-section {
-    margin: 30px;
-}
+
 .services {
     display: flex;
     justify-content: space-evenly;
-    
-       }
+    }
 
 .service {
     text-align: center;
-    margin: 10px;
-    padding: 10px;
-    width: 30%;
+    margin: 10px auto;
+    padding: 0px;
+    width: 15%;
+    
 }
 .service img {
     height: 160px;
     display: block;
-    margin: auto;
+    margin: 0 auto;
     
 }
 
 /*section-contact*/
 
 .contact-head {
-    margin: auto;
-    padding: 0;
+    margin: 20px 10px;
+    padding: 10px;
     
 }
 
 .contact-head h2 {
+    margin: 0;
+    padding: 0px;
     text-align: left;
 }
 
-.contact {
-    margin: auto;
-    padding: 0;
+.contact-box {
+    margin: 10px;
+    padding: 0 20px;
     display: flex;
+    justify-content: center;
+
    }
 
-div#contact-card {
-    margin: 0;
-    padding-top: 2em;
+#contact-card {
+    margin: 0 0;
+    padding-top: 1.5em;
     text-align: center;
+    width: 35%;
+    
      
 }
 
+#contact-card a:hover {
+    text-decoration: underline;
+    color: #4caaa7;
+}
 #contact-pic img {
-    display: contain;
-    height: 300px;
-    margin-right: 100px;
-    
+    height: 200px;
+    margin: 0 0;       
     
 }
+
 span {
     font-size: 1.2em;
     font-weight: bold;
@@ -229,12 +246,12 @@ span {
 
 footer { 
     padding: 20px;
-    margin: auto;
+    margin: 0 0;
     color: white;
     background-color: #66000A;
     text-align: center;
-    position: absolute;
     width: 100%;
+    
     
 }
 
@@ -307,7 +324,7 @@ footer {
    float: left;
    width: 65%;
    padding: 10px;
-   background-color: #feffff54;
+   background-color: #feffff35;
 }
 
 .order-now {
@@ -344,13 +361,28 @@ footer {
         }
         .services, .contact {
             display: block;
-            margin: auto;            
+            margin: auto;
+                     
         }
         .service {
-            width: 90%
+            width: 90%;
         }
-        .contact img {
-            margin: 0 10%;
+        .contact-box {
+            display: block;
+            text-align: center;
+        }
+        #contact-card {
+            width: 90%;
+            
+        }
+        #contact-pic img {
+            margin: auto auto;
+        }
+        
+        .secondary-background {
+          background-image: url('./media/secondary_background_600.png');
+          background-position: center;
+
         }
     }
     
@@ -371,6 +403,13 @@ footer {
         margin-top: -25px;
         padding: 15px;
         }
+
+        #contact-pic img {
+            margin: 0;
+            height: 150px;
+        }
+        
+       
     }
 
 @media screen and (max-width: 520px) {
@@ -393,6 +432,12 @@ footer {
     .service-list ul {
         list-style: none;
     }
+    #contact-pic {
+        height: 150px;
+        margin: 0 auto;
+    }
+   
+    
   }
 
   @media screen and (min-width: 700px) {
@@ -403,6 +448,7 @@ footer {
         display: flex;
         justify-content: left;
     }     
+   
 }
     
 @media screen and (min-width: 1000px) {
@@ -414,12 +460,12 @@ footer {
 
 @media screen and (min-width: 1200px) {
    .hero {
-        animation: clouds 10s linear infinite;
+        animation: clouds 0s linear infinite;
    }
 }
 
 @keyframes clouds {
-    0%{background-position: right;}
-    100%{background-position: left;}
+    0%{background-position: right}
+    100%{background-position: left}
 }
 
