@@ -21,10 +21,6 @@ body {
     padding: 0 auto;
 }
 
-
-
-
-
 .container {
     width: 98%;
     margin: 1%;
@@ -74,16 +70,15 @@ h3 {
 }
 
 .header-text {
+    margin: 0 0 -50px 0;
     text-align: center;
     color: white;
-    margin-top: -50px;
-    margin-bottom: -100px;
     }
 
 .header-text h1{
     font-size: 3em;
-    padding-top: 80px;
-    margin: 10px;
+    padding-top: 20px;
+    margin: 0 0;
 }
 
 .header-text h2 {
@@ -259,8 +254,6 @@ footer {
 /*End Home Page -- Begin Secondary Pages*/
 /*Header*/
 
-
-
 .secondary .header {
     background-image: none;
     background-color: #003366;
@@ -271,7 +264,16 @@ footer {
     border-width: 10px;
     margin: 0;
     padding: 0;
-    }
+}
+
+#logo {
+    margin: 10px 0px 20px 10px;
+}
+    
+#logo a {
+    color: white;
+    font-size: 2em;
+}
 
 .secondary .navbar {
     background-image: none;
@@ -283,24 +285,19 @@ footer {
 .secondary .navbar a {
     margin: 0px 0px;
     padding: 0px 15px;
-    
-    }
+}
 
 .secondary .navbar ul {
     padding: 0;
-    margin: 0;
+    margin: 10px 0px 0px 0px;
     float: right;
     
 }
 .secondary .navbar li {
     display: inline;
-    
 }
 
-.secondary .header h1 {
-    padding: 10px;
-    color: white;
-}
+
 
 /*PAGE - Services*/
 
@@ -310,7 +307,8 @@ footer {
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    margin: auto;
+    margin: 0 0;
+    padding: 0 0;
     z-index: 999;
     display: flex;
     
@@ -323,7 +321,8 @@ footer {
 .service-list {
    float: left;
    width: 65%;
-   padding: 10px;
+   margin: 0px 10px;
+   padding: 20 10px;
    background-color: #feffff35;
 }
 
@@ -338,7 +337,7 @@ footer {
    }
 
    .secondary button {
-       background-color: #326600;
+    background-color: #326600;
    }
 
    .secondary button:hover {
@@ -354,63 +353,94 @@ footer {
     .navbar {
         background-image: url('./media/SA_Header_600.png');
         background-repeat: no-repeat;
-        background-size: contain;
-        background-position: top;
+        background-size: cover;
+        background-position: bottom;
         width: 100%;
         height: 380px;
-        }
-        .services, .contact {
-            display: block;
-            margin: auto;
-                     
-        }
-        .service {
-            width: 90%;
-        }
-        .contact-box {
-            display: block;
-            text-align: center;
-        }
-        #contact-card {
-            width: 90%;
-            
-        }
-        #contact-pic img {
-            margin: auto auto;
-        }
-        
-        .secondary-background {
-          background-image: url('./media/secondary_background_600.png');
-          background-position: center;
-
-        }
     }
+    .services, .contact {
+        display: block;
+        margin: auto;
+                     
+    }
+        
+    .service {
+        width: 90%;
+    }
+        
+    .contact-box {
+        display: block;
+        text-align: center;
+    }
+        
+    #contact-card {
+        width: 90%;
+    }
+
+    #contact-pic img {
+        margin: auto auto;
+    }
+        
+    .secondary-background {
+        background-image: url('./media/secondary_background_600.png');
+        background-position: center;
+    }
+}
     
 @media screen and (max-width: 455px) {
-
-    .navbar {
-        height: 390px;
-        border-bottom-width: 10px;
+    .header-text {
+        text-align: center;
+        color: white;
+        margin-top: 0 0;
         }
-
-    .navbar-menu {        
-        padding-top: 255px; 
-        }
-
-    .navbar-menu a,  .navbar-menu ul {
-        display: block;
-        float: left;
-        margin-top: -25px;
-        padding: 15px;
-        }
-
-        #contact-pic img {
-            margin: 0;
-            height: 150px;
-        }
-        
-       
+    
+    .header-text h1{
+        font-size: 3em;
+        margin: 10px;
     }
+    
+    .header-text h2 {
+        color: white;
+        font-size: 1.25em;
+        font-style: italic;
+        text-transform: capitalize;
+        opacity: 90%;
+    
+    }
+    .navbar {
+        height: 200px;
+        border-bottom-width: 10px;
+        background-position: cover;
+    }
+
+    .navbar-menu {     
+        margin: 0 .35em;
+        padding-top: 140px; 
+    }
+
+    .navbar-menu ul {
+        display: inline;
+                    
+    }
+
+    .navbar-menu a {
+        margin: 0 10px 0 10px;
+        padding: 10px 0px 0px 0px;
+        font-size:1.25em;
+    }
+
+    #contact-pic img {
+        margin: 0;
+        height: 150px;
+    }
+        
+    .secondary .navbar a {
+        margin: 0px 0px;
+        padding: 10px 10px 0px 0px;
+        font-size: 1.25em;
+    }
+       
+}
 
 @media screen and (max-width: 520px) {
 
@@ -418,20 +448,29 @@ footer {
         display: block;
         
     }
-    .hero-text, .secondary-background, .service-list, .order-now {
+    .hero-text, .secondary-background, .order-now {
         float: none;
         margin: 10px;
         padding: 10px;
         width: 98%;
         text-align: center;
         }
-
+    
+    .service-list {
+        float: none;
+        margin: 30px 0;
+        padding: 0 0;
+        width: 98%;
+        text-align: center;
+    }
     .hero-text h2 {
         text-align: center;
     }
+
     .service-list ul {
-        list-style: none;
+        text-align: left;
     }
+
     #contact-pic {
         height: 150px;
         margin: 0 auto;
