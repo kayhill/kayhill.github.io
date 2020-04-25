@@ -183,7 +183,7 @@ a.current {
     text-align: center;
     margin: 10px auto;
     padding: 0px;
-    width: 15%;
+    width: 20%;
     
 }
 .service img {
@@ -436,10 +436,11 @@ iframe {
         margin: 0 auto;
     }
    
-    .submit-order iframe {
-        width: 450px;
+    .submit-order iframe, .order-now iframe {
+        width: 420px;
     }
-       
+     
+    
 
 }
 
@@ -496,7 +497,7 @@ iframe {
         font-size: 1.25em;
     }
         
-    .submit-order iframe {
+    .submit-order iframe, .order-now iframe {
         width: 325px;
     }
     
