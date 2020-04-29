@@ -67,6 +67,12 @@ h3 {
     opacity: 0;
 }
 
+.stripe {
+    background-color: #4caaa735;
+}
+
+
+
 /* Header Home */
 .header { 
     background-color: #003366;
@@ -310,9 +316,10 @@ footer a:hover {
 
 
 
-/*PAGES - Services and Order*/
+/*SECONDARY PAGES*/
 
 
+    
 .secondary-background {
     background-image: url('./media/secondary_background.png');
     background-size: cover;
@@ -322,8 +329,27 @@ footer a:hover {
     padding: 0 0;
     z-index: 999;
     display: flex;
-    
 }
+
+.secondary-no-background {
+    margin: 0 0;
+    padding: 0 0;
+    z-index: 999;
+    display: flex;
+}
+
+.secondary #contact-card {
+    margin: 0 0;
+    background-color: #4caaa745;
+ }
+
+ .secondary #contact-head {
+     margin: 0 auto;
+ }
+
+#skyline-spacer {
+    height: 200px;
+   }
 
 .service-list b {
     font-size: 1.25em;
@@ -348,7 +374,7 @@ footer a:hover {
 }
 
 .contact-now {
-    margin-top: 50px;
+    margin: 0 0;
     height: 1000px;
 }
 
@@ -356,11 +382,13 @@ footer a:hover {
     position: relative;
     width: 100%;
     float: left;
-    padding: 10px;
+    padding: 1em;
     text-align: center;
-    padding-bottom: 30px;
-    margin: 1em;
-    height: 800px;
+    margin: 2em auto;
+    border: #326600;
+    border-width: 5px;
+    border-style: solid;
+    height: min-content;
    }
 
 iframe {
@@ -376,7 +404,9 @@ iframe {
     background-color: #4caaa7;
 }
 
-
+.service-list em:hover {
+    background-color: #4caaa7
+}
 
 /*Media Queries */
 
@@ -395,7 +425,7 @@ iframe {
 
     .services, .contact {
         display: block;
-        margin: auto;
+        margin: 0 auto;
                      
     }
         
@@ -403,9 +433,18 @@ iframe {
         width: 90%;
     }
         
+            
+    .secondary-background {
+        background-image: url('./media/secondary_background_600.png');
+        background-position: center;
+        
+    }
+
+     
     .contact-box {
         display: block;
         text-align: center;
+        margin: 0 auto;
     }
         
     #contact-card {
@@ -415,19 +454,12 @@ iframe {
     #contact-pic img {
         margin: auto auto;
     }
-        
-    .secondary-background {
-        background-image: url('./media/secondary_background_600.png');
-        background-position: center;
-        
-    }
-
     
-   .hero, .secondary-background, .service-list, .order-now, .submit-order {
+   .hero, .secondary-background, .secondary-no-background, .service-list, .order-now, .submit-order {
         display: block;
         
     }
-    .hero-text, .secondary-background, .order-now, .submit-order {
+    .hero-text, .secondary-background, .secondary-no-background, .order-now, .submit-order {
         float: none;
         margin: 10px;
         padding: 10px;
@@ -459,10 +491,11 @@ iframe {
         width: 420px;
     }
 
-    .order-now {
-        height: 1200px;
-    }
+    
      
+    #skyline-spacer {
+        height: 150px;
+       }
     
 
 }
@@ -520,7 +553,7 @@ iframe {
         font-size: 1.25em;
     }
         
-    .submit-order iframe, .order-now iframe, .contact-now iframe {
+    .submit-order iframe, .contact-now iframe {
         width: 325px;
     }
     
@@ -530,10 +563,10 @@ iframe {
         width: 98%;
     }
 
-    
-    .order-now {
-        height: 1300px;
-    }
+
+    #skyline-spacer {
+        height: 120px;
+       }
 
 }
 
