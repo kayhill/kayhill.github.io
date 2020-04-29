@@ -63,7 +63,9 @@ h3 {
     font-size: 1.25em;
 }
 
-
+.transparent {
+    opacity: 0;
+}
 
 /* Header Home */
 .header { 
@@ -246,8 +248,19 @@ footer {
     text-align: center;
     width: 100%;
     position: absolute;
+    
 }
 
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    text-emphasis: em;
+    color: #4caaa7;
+}
 
 /*End Home Page -- Begin Secondary Pages*/
 /*Header*/
@@ -324,7 +337,7 @@ footer {
    background-color: #feffff35;
 }
 
-.submit-order {
+.submit-order, .contact-now  {
    margin: 30px 10px;
    padding: 20 10px;
    background-color: #feffff35;
@@ -332,6 +345,11 @@ footer {
 
 .submit-order {
     height: 1800px;
+}
+
+.contact-now {
+    margin-top: 50px;
+    height: 1000px;
 }
 
 .order-now {
@@ -364,7 +382,7 @@ iframe {
 
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
 
     .navbar {
         background-image: url('./media/SA_Header_600.png');
@@ -401,6 +419,7 @@ iframe {
     .secondary-background {
         background-image: url('./media/secondary_background_600.png');
         background-position: center;
+        
     }
 
     
@@ -436,15 +455,19 @@ iframe {
         margin: 0 auto;
     }
    
-    .submit-order iframe, .order-now iframe {
+    .submit-order iframe, .contact-now iframe {
         width: 420px;
+    }
+
+    .order-now {
+        height: 1200px;
     }
      
     
 
 }
 
-@media screen and (max-width: 455px) {
+@media screen and (max-width: 500px) {
     .header-text {
         text-align: center;
          color: white;
@@ -497,18 +520,24 @@ iframe {
         font-size: 1.25em;
     }
         
-    .submit-order iframe, .order-now iframe {
+    .submit-order iframe, .order-now iframe, .contact-now iframe {
         width: 325px;
     }
     
-    .order-now, .submit-order {
+    .order-now, .submit-order, .contact-now {
         margin: 0 0;
         padding: 0 0;
         width: 98%;
     }
+
+    
+    .order-now {
+        height: 1300px;
+    }
+
 }
 
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 768px) {
     .hero-text {
         width: 55%;
     }
@@ -519,11 +548,12 @@ iframe {
    
 }
     
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1024px) {
     .hero-text p {
         font-size: 2em;
         margin-top: -20px;
     }
+    
 }
 
 @media screen and (min-width: 1200px) {
@@ -537,3 +567,8 @@ iframe {
     100%{background-position: left}
 }
 
+@supports (-webkit-touch-callout: none) {
+    .secondary-background {
+        background-image: none;
+    }
+  }
