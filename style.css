@@ -16,7 +16,7 @@ body {
 }
 
 .spacer {
-    height: 5em;
+    height: 75px;
     width: 100%;
     margin: 0 auto;
     padding: 0 auto;
@@ -33,11 +33,12 @@ body {
 }
 
 button {
-    background-color: #331a4d;
+    background-color: #326600;
     border: none;
     color: white;
     padding: 1em 1em;
     margin-top: .75em;
+    margin-bottom: 1.5em;
     text-align: center;
     text-decoration: none;
     text-transform: capitalize;
@@ -144,14 +145,20 @@ a.current {
 /*main-hero*/
 
 .hero {
-   overflow: hidden;
-   background-image: url(./media/cloud_background.png);
-   background-repeat: repeat;
-   background-position: right;
-   background-position-y: -40px;
-   background-size: cover;
-   margin-top: -10px;
-   animation: clouds 45s linear infinite;
+    width: 100%;
+    display: flex;
+    
+    justify-content: space-between;
+    padding-top: 2em;
+}
+    
+  
+
+.hero-text {
+    padding-top: 1em;
+    padding-left: 2em;
+    float: left;
+    
 }
 
 .hero h2 {  
@@ -166,11 +173,15 @@ a.current {
     color: #001d3a; 
 }
 
-.hero-text {
+.hero-image {
+    width: 100%;
+}
+
+#cottage-home {
+    float: right;
+    height: 350px;
     padding-top: 1em;
-    float: left;
-    width: 60%;
-    padding-left: 2em;
+    margin: 0 auto;
 }
 
 
@@ -402,7 +413,7 @@ iframe {
 }
 
 .order-text {
-    margin: 1em;
+    margin: 1em auto;
     padding: 1em;
     background-color: #ffffff99;
 }
@@ -460,24 +471,47 @@ iframe {
     }
 
    #contact-card {
-       width: 100%;
+        width: 100%;
     }
+
+    .hero {
+        display: block;
+        width: 100%;
+    }
+    .hero-text {
+        background-image: url(./media/cloud_background.png);
+        background-repeat: repeat;
+        background-position: right;
+        background-size: initial;
+        animation: clouds 45s linear infinite;
+        float: none;
+        margin: 0 0;
+        width: 100%;
+    }
+
 
    .hero, .secondary-background, .secondary-no-background, .service-list, .order-now, .submit-order {
         display: block;
     }
 
-    .hero-text, .secondary-background, .secondary-no-background, .submit-order {
+    .hero-text, .hero-image, .secondary-background, .secondary-no-background, .submit-order {
         float: none;
         padding: 1em;
         text-align: center;
     }
 
-    .hero-text {
+    
+    #cottage-home {
         width: 100%;
+        height: inherit;
+        min-height: 100px;
+        max-height: 500px;
+        float: none;
         padding: 0 0;
         margin: 0 auto;
     }
+
+    
 
     .order-now {
         float: none;
@@ -602,30 +636,28 @@ iframe {
     }
 }
 
-  @media screen and (min-width: 768px) {
-    .hero-text {
-        width: 55%;
-    }
-
-   #startbutton {
-        display: flex;
-        justify-content: left;
-    }     
-   
-    
-    
-}
-    
+  
 @media screen and (min-width: 1024px) {
     .hero-text p {
-        font-size: 2em;
+        font-size: 1.5em;
         margin-top: -20px;
     }
+
     
+    #startbutton {
+        display: flex;
+        justify-content: center;
+    }     
+
 }
+    
+
 
 @media screen and (min-width: 1200px) {
-    
+    #cottage-home {
+        height: 400px;
+        margin-right: 1em;
+    }
 }
 
 @keyframes clouds {
