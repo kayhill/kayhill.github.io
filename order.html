@@ -42,16 +42,37 @@
     <main>
       <div class="secondary-background">
         <div class="order-text">
-        <h1>Order an Appraisal</h1>
+          <h1>Order an Appraisal</h1>
           <br>
           <p>Get started with your appraisal by submitting the order form below. Please include as much information as possible. We will contact you within 48 hours.<br>
           <br> We look forward to working with you!
           </p>
        </div>
-        <div class="submit-order">
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScFIPGkwH7vDiMxy3aeCE7Jkp2VADiCrxXcwUTZN7MnfA04LQ/viewform?embedded=true" width="650" height="1800" frameborder="0" marginheight="0" marginwidth="2%">Loading…</iframe>
+
+        
+
+        <form name="order" netflify>
+           
+            <input name="name" type="text" class="order-input" placeholder="Name" required>   
+            <input name="email" type="text" class="order-input" placeholder="Email" required>
+            <input name="phone" type="text" class="order-input" placeholder="Phone Number">
+            <select id="property-type" name="property" class="order-input">
+              <option  value="SFR">Single Family Residential</option>
+              <option value="condo">Condominium</option>
+              <option value="construction">Proposed Construction</option>
+              <option value="vacant_land">Vacant Land</option>
+              <option value="multi-family">Multi-Family</option>
+              <option value="other">Other</option>
+            </select>
+            <input name="address" type="text" class="order-input" placeholder="Property Address">
+            <input name="address-county" type="text" class="order-input" placeholder="Property County">
+            <textarea name="text" class="order-input" placeholder="Additional Comments"></textarea>
+            <input type="submit" value="SUBMIT">
+          
+        </form>
+          
       
-        </div>
+        
       
       </div>
     </main>
