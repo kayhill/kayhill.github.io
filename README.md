@@ -1,8 +1,7 @@
 My very first website! 
 
-Built with HTML & CSS only
+Built with HTML & CSS
 
 TODO:
   - fix cloud scroll on large screen
-  - add native forms
   - SEO work
