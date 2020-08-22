@@ -1,0 +1,159 @@
+/* Global */
+
+body {
+    font-family: 'Raleway', arial, sans-serif;
+    font-size: 16px;
+    color: #003366;
+    padding: 0;
+    margin: 0;
+    background-color: white;    
+}
+
+.section {
+    margin-bottom: 50px;
+    padding-top: 50px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.btn {
+    background-color: #66000A;
+}
+
+.title {
+    margin-bottom: 50px;
+}
+
+/* Header */
+nav {
+    background-color: #001d3a;
+}
+
+.brand-logo {
+    width: fit-content;
+}
+
+#mobile-demo {
+    text-align: left;
+}
+
+
+/* Splash */
+.splash {
+    background: url("../media/asheville_small.png") no-repeat center;
+    background-size: cover;
+    height: 600px;
+}
+
+.splash h2 {
+    font: 1.5em;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px #001d3a1e;
+};
+
+.splash p {
+    background: rgb(220, 215, 250);
+}
+
+/*About*/
+#about {
+    padding-top: 0px;
+}
+
+/*Services*/
+#pyschology {
+    color: #66000A;
+    margin-top: 50px;
+}
+
+#house {
+    color: #c46e28;
+    margin-top: 50px;
+}
+
+#verifiedUser {
+    color: #4caaa7;
+    margin-top: 50px;
+}
+
+#emojiObject {
+    color: #331a4d;
+    margin-top: 50px;
+}
+
+.bold {
+    font-weight: bold;
+    color: #c46e28;
+}
+
+ul {
+    text-align: center;
+    font-size: 1.25em;
+}
+
+#services {
+    background: url("../media/skyline_logo_sml_clr.png") no-repeat center;
+    background-size: contain;
+    background-position-y: bottom;
+    background-position-x: right;
+    text-align: center;
+}
+
+.spacer {
+    height: 300px;
+}
+
+.divider {
+    color: #4caaa7;
+}
+
+/*Contact*/
+
+#contact {
+    text-align: center;
+    background-color: rgba(230, 244, 255, 0.712);
+    margin-bottom: 0px;
+    padding-bottom: 50px;
+}
+
+.spaceAbove {
+    margin-top:25px;
+}
+
+/* Footer */
+
+.footer-list {
+    text-align: left;
+}
+
+.page-footer {
+    background-color: #001d3a;
+}
+
+/* Responsive Medium Screens and Up */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .brand-logo {
+        margin-left: 20px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .splash {
+        background: url("../media/asheville_large.png") no-repeat center;
+        background-size: cover;
+    }
+
+    #services {
+        background: url("../media/skyline_logo_lrg_clr.png") no-repeat;
+        background-size: cover;
+        height: 650px;
+        background-position-y: bottom;
+    }
+   
+
+}
