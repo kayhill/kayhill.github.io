@@ -35,19 +35,16 @@
             <li><a class="sidenav-close" href="#about">About Us</a></li>
             <li><a class="sidenav-close" href="#services">Our Services</a></li>            
             <li><a class="sidenav-close" href="#contact">Contact</a></li>
-            <li><a class="light-blue-text text-accent-2" href="./getaquote.html">Get a Quote <i class="material-icons left light-blue-text text-accent-2 right">request_quote</i></a></li>
-            
-        </ul>
-
-        
+            <li><a class="light-blue-text text-accent-2" href="./getaquote.html">Get a Quote <i class="material-icons left light-blue-text text-accent-2 right">request_quote</i></a></li>            
+        </ul>        
     </header>
+    
     <main>
         <div class="section scrollspy splash">
             <div class="row">
                 <div class="col s10 offset-s1 l7 offset-l2">
-                    <h2>Real Estate Appraisals<br> You Can Trust</h2>
-                    
-                        <p class="flow-text ">Are you looking for a fair and accurate appraisal for property in Asheville or Western North Carolina?</p>
+                    <h2 class="shadow white-text">Real Estate Appraisals<br> You Can Trust</h2>                    
+                        <p class="flow-text white-text shadow">Are you looking for a fair and accurate appraisal for property in Asheville or Western North Carolina?</p>
                         <a class="waves-effect waves-light btn" href="#contact">Let's get started<i class="material-icons right">arrow_forward</i></a>                    
                 </div>
             </div>          
@@ -105,16 +102,17 @@
         
         <div class="section scrollspy" id="services">
             <h4 class="center title">OUR SERVICES</h4>
-            <div class="sml-spacer"></div>
-            <div class="container row">                
-                <div class="col s12 l6">
-                    <p>Our appraisals are conducted by a <span class="bold">highly-trained professional</span> who is certified to determine the value of a home without bias. The appraiser’s <span class="bold">reliable</span> assessment is informed by rigorous training, numerous tests, over a decade of on-the-job experience, and required continuing education.</p>                    
-                    <p>Every finding of the appraisal is substantiated with evidence in a complete report that you can trust to be <span class="bold">fair and accurate</span>.
+            
+            <div class="row">                
+                <div class="col s12 l8">
+                    <div class="container">
+                    <p id="servicesDesc">Our appraisals are conducted by a <span class="bold">highly-trained professional</span> who is certified to determine the value of a home without bias. The appraiser’s <span class="bold">reliable assessment </span> is informed by rigorous training, numerous tests, over a decade of on-the-job experience, and required continuing education.</p>                    
+                    <p id="servicesDesc">Every finding of the appraisal is substantiated with evidence in a complete report that you can trust to be <span class="bold">fair and accurate</span>.
                     </p>
                 </div>
-                <br>
+                </div>            
                 <h5 class="center orange-text text-darken-5">SERVICES LIST</h5>
-                <div class="col s6 l3">                    
+                <div class="col s6 l2">                    
                     <ul>
                         <li>Mortgages</li>
                         <li>Refinance</li>
@@ -123,7 +121,7 @@
                         <li>Relocation</li>
                     </ul>
                 </div>
-                <div class="col s6 l3">
+                <div class="col s6 l2">
                     <ul>
                         <li>Home Equity</li>
                         <li>Insurance</li>
@@ -132,7 +130,7 @@
                         <li>And more...</li>
                     </ul>
                 </div>
-                <div class="spacer"></div>
+                <div class="spacer"></div>            
             </div>       
         </div>            
 
@@ -145,17 +143,19 @@
                 <div class="col s10 offset-s1 l4">
                     <div class ="contact-card"> 
                         <img class="responsive-img" src="./media/JayJungelsProfile.png" alt="Profile Picture of Jay Jungels, owner">
-                        <p>Jay Jungels</p>
-                        <em>Skyline Appraisal Owner, Certified Appraiser</em>
-                        <p>102 Clarks Chapel Rd<br>Weaverville, NC 28787</p>
-                        <a href="mailto:skylineappraisal1@gmail.com"><p>skylineappraisal1@gmail.com</p></a> 
-                        <p>513-222-4703</p>
+                        <span class="orange-text text-darken-5 flow-text">JAY JUNGELS</span><br>
+                        <span class="flow-text"><em>Skyline Appraisal Owner and Certified Appraiser</em></span>
+                        <ul class="contact-info">
+                            <li><a target="_blank" href="tel: 1-513-222-4703"> <i class="material-icons">local_phone</i><br>513-222-4703</a></li>
+                            <li><a target="_blank" href="https://goo.gl/maps/a463wXR4L1ThozM68"><i class="material-icons">location_on</i><br>102 Clarks Chapel Rd Weaverville, NC 28787</a></li>
+                            <li><a target="_blank" href="mailto:skylineappraisal1@gmail.com"><i class="material-icons">local_post_office</i><br> skylineappraisal1@gmail.com</a></li>                
+                        </ul>
                     </div>
                 </div>
                 <div class="col s12 l7 offset-l1">
-                    <h5 class="title">LET'S TALK!</h5>
-                    <p>At Skyline Appraisal, we are dedicated to delivering excellent customer service and high quality appraisals you can trust. If you are looking for a reliable evaluation of your home or property value, contact us today to get started. </p>
-                    <p>We look forward to hearing from you!</p>
+                    <h5 class="title orange-text text-darken-5">LET'S TALK!</h5>
+                    <p class="flow-text">At Skyline Appraisal, we are dedicated to delivering excellent customer service and high quality appraisals you can trust. If you are looking for a reliable evaluation of your home or property value, contact us today to get started. </p>
+                    <p class="flow-text">We look forward to hearing from you!</p>
                     <div class="contact-now">
                         <form name="contact" method="POST" netlify>                         
                           <input name="name" type="text" class="contact-form" placeholder="Name**" required>   
